@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-moduscreate-plugins-echoswift" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ModusEchoSwift</name>
+    <js-module name="ModusEchoSwift" src="www/ModusEchoSwift.js">
+        <clobbers target="medicalWidget" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ModusEchoSwift">
+                <param name="ios-package" value="ModusEchoSwift" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/ModusEchoSwift.swift" />
+        <hook src="hooks/copyExtension.js" type="after_platform_add" />
+    </platform>
+</plugin>

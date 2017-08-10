@@ -1,0 +1,9 @@
+{
+  "name": "ModusEchoSwift",
+  "version": "0.0.1",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "recursive-copy": "^2.0.6",
+    "xcode": "^0.9.3"
+  }
+}
