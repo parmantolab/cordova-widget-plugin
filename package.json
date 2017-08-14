@@ -1,5 +1,5 @@
 {
-  "name": "ModusEchoSwift",
+  "name": "cordova-widget-plugin",
   "version": "0.0.1",
   "dependencies": {
     "glob": "^7.1.2",

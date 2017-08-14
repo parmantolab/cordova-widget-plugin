@@ -5,13 +5,13 @@ exports.saveText = function(name,value, success, error) {
 };
 
 exports.addContact = function(relationship,name,phone,phoneType, success, error) {
-    exec(success, error, "ModusEchoSwift", "save", [relationship,name,phone,phoneType]);
+    exec(success, error, "ModusEchoSwift", "addContact", [relationship,name,phone,phoneType]);
 };
 
 exports.removeContact = function(index, success, error) {
-    exec(success, error, "ModusEchoSwift", "save", [index]);
+    exec(success, error, "ModusEchoSwift", "removeContact", [index]);
 };
 
 exports.updateContact = function(index,relationship,name,phone,phoneType, success, error) {
-    exec(success, error, "ModusEchoSwift", "save", [index, relationship,name,phone,phoneType]);
+    exec(success, error, "ModusEchoSwift", "updateContact", [index, relationship,name,phone,phoneType]);
 };
