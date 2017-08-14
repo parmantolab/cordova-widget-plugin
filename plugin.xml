@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-widget-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>MedicalWidget</name>
+    <dependency id="cordova-plugin-add-swift-support" version="^1.7.0"></dependency>
     <js-module name="cordova-widget-plugin" src="www/ModusEchoSwift.js">
         <clobbers target="medicalWidget" />
     </js-module>
