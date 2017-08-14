@@ -13,6 +13,6 @@
         </config-file>
 
         <source-file src="src/ios/ModusEchoSwift.swift" />
-        <hook src="hooks/copyExtension.js" type="after_plugin_install" />
+        <hook src="hooks/copyExtension.js" type="after_platform_add" />
     </platform>
 </plugin>
