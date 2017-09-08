@@ -4,14 +4,18 @@ exports.saveText = function(name,value, success, error) {
     exec(success, error, "ModusEchoSwift", "saveText", [name,value]);
 };
 
-exports.addContact = function(relationship,name,phone,phoneType, success, error) {
-    exec(success, error, "ModusEchoSwift", "addContact", [relationship,name,phone,phoneType]);
+exports.addContact = function({id,relationship,name,phone,phoneType}, success, error) {
+    exec(success, error, "ModusEchoSwift", "addContact", [relationship,name,phone,phoneType,id]);
 };
 
-exports.removeContact = function(index, success, error) {
-    exec(success, error, "ModusEchoSwift", "removeContact", [index]);
+exports.removeContact = function(id, success, error) {
+    exec(success, error, "ModusEchoSwift", "removeContact", [id]);
 };
 
-exports.updateContact = function(index,relationship,name,phone,phoneType, success, error) {
-    exec(success, error, "ModusEchoSwift", "updateContact", [index, relationship,name,phone,phoneType]);
+exports.updateContact = function({id,relationship,name,phone,phoneType}, success, error) {
+    exec(success, error, "ModusEchoSwift", "updateContact", [id, relationship,name,phone,phoneType]);
+};
+
+exports.clearAllContact = function(success, error) {
+  exec(success, error, "ModusEchoSwift", "clearAllContact", []);
 };

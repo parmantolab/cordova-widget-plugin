@@ -17,7 +17,8 @@ save value for a text field. The name can be the following:
     * ```Blood Type```
     * ```Weight```
     * ```Height```
-* addContact(relationship:string,name:string,phone:string,phoneType:string,success:function,error:function): add a new emergency contact
-* removeContact(index:int,success:function,error:function): remove a emergency contact by index
-* updateContact(index:int,relationship:string?,name:string?,phone:string?,phoneType:string?, success:function, error:function): update an existing emergency contact information by its index. The field for emergency contact is optional, if you give it null, it won't be update.
+* addContact({id:string,relationship:string,name:string,phone:string,phoneType:string},success:function,error:function): add a new emergency contact
+* removeContact(id:string,success:function,error:function): remove a emergency contact by index
+* updateContact({index:string,relationship:string?,name:string?,phone:string?,phoneType:string?}, success:function, error:function): update an existing emergency contact information by its index. The field for emergency contact is optional, if you give it null, it won't be update.
+* clearAllContact(success:function,error:function): clear all contacts information
 
