@@ -1,4 +1,4 @@
-let GROUP_NAME:String = "group.tony.app-widget-e1"
+let GROUP_NAME:String = "group.edu.pitt.shrs.imhereng"
 
 @objc(ModusEchoSwift) class ModusEchoSwift : CDVPlugin {
 

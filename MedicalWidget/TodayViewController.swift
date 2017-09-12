@@ -82,7 +82,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let group = UserDefaults(suiteName: "group.tony.app-widget-e1") {
+        if let group = UserDefaults(suiteName: "group.edu.pitt.shrs.imhereng") {
             group.synchronize()
             parseNormalValue(forkey: "Medical Condition", toArray: &data, group: group)
             parseNormalValue(forkey: "Medical Notes", toArray: &data, group: group)

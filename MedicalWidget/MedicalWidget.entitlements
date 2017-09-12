@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.tony.app-widget-e1</string>
+		<string>group.edu.pitt.shrs.imhereng</string>
 	</array>
 </dict>
 </plist>
